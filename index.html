@@ -5,8 +5,9 @@
   <style>
     /* Color Scheme */
     :root {
-      --primary-color: #0084FF;
-      --secondary-color: #F1F4F8;
+      --primary-color: #1B75BC;
+      --secondary-color: #F8F8F8;
+      --accent-color: #FF725E;
       --text-color: #333333;
     }
 
@@ -25,19 +26,38 @@
     h1 {
       text-align: center;
       color: var(--primary-color);
+      margin-bottom: 20px;
     }
 
     h2 {
       color: var(--primary-color);
+      margin-top: 30px;
+      margin-bottom: 15px;
     }
 
     p {
       text-align: justify;
+      line-height: 1.5;
+      margin-bottom: 15px;
     }
 
     .image {
       text-align: center;
       margin: 20px 0;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #FF5C4C;
     }
   </style>
 </head>
@@ -73,6 +93,9 @@
     <h2>Join Vivaan and Ved</h2>
     <p>
       Vivaan and Ved invite you to join them in their mission to prioritize mental health and create a supportive community. Together, they believe that by raising awareness and providing resources, they can make a positive difference in the lives of many.
+    </p>
+    <p>
+      <a href="#" class="button">Get Involved</a>
     </p>
   </div>
 </body>

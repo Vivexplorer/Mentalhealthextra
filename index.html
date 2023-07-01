@@ -3,30 +3,68 @@
 <head>
   <title>Vivaan and Ved - Mental Health Advocates</title>
   <style>
+    /* Font */
+    @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
+
     /* Color Scheme */
     :root {
-      --primary-color: #1B75BC;
-      --secondary-color: #F8F8F8;
-      --accent-color: #FF725E;
+      --primary-color: #00A4EF;   /* Blue */
+      --secondary-color: #FFB900; /* Yellow */
+      --accent-color: #7FBA00;    /* Green */
       --text-color: #333333;
+      --background-color: #F8F8F8;
     }
 
+    /* Body Styles */
     body {
-      background-color: var(--secondary-color);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: var(--background-color);
       color: var(--text-color);
-      font-family: Arial, sans-serif;
+      margin: 0;
     }
 
+    /* Header Styles */
+    header {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    /* Navigation Styles */
+    nav {
+      background-color: var(--secondary-color);
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+    }
+
+    /* Main Content Styles */
     .container {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: var(--primary-color);
-      margin-bottom: 20px;
     }
 
     h2 {
@@ -48,23 +86,56 @@
 
     .button {
       display: inline-block;
-      background-color: var(--accent-color);
-      color: white;
       padding: 10px 20px;
+      background-color: var(--accent-color);
+      color: #fff;
       text-decoration: none;
       border-radius: 4px;
       transition: background-color 0.3s ease;
     }
 
     .button:hover {
-      background-color: #FF5C4C;
+      background-color: #6A9500;
+    }
+
+    /* Complex Element */
+    .complex-element {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .complex-element h3 {
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    .complex-element p {
+      margin-bottom: 10px;
+    }
+
+    .complex-element .button {
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>Vivaan Shah and Ved Nakum - Mental Health Advocates</h1>
+  </header>
 
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
     <div class="image">
       <img src="vivaan.jpg" alt="Vivaan Shah">
       <img src="ved.jpg" alt="Ved Nakum">
@@ -80,7 +151,8 @@
       Vivaan and Ved firmly believe in the importance of mental health and are dedicated to spreading awareness and providing support. They actively participate in school programs and initiatives that focus on promoting mental well-being. Through presentations, workshops, and discussions, they aim to educate their peers and teachers about the significance of mental health and the resources available for those in need.
     </p>
 
-    </p>
+
+    </div>
   </div>
 </body>
 </html>
